@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "id"     : "ActiontAttributeSchema.schema",
+  "type": "object",
+  "properties": {
+    "ActionType": {
+      "type": "number",
+      "enum": [1, 2, 3, 4, 5, 6]
+    },
+    "ActionId": {
+      "type": "string",
+      "default": "system"
+    },
+    "EventId": {
+      "type": "string",
+      "default": "system"
+    },
+    "scheduledTimestamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "executionTimeStamp": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "Payload": {
+      "type": "object"
+    },
+    "userId": {
+      "type": "string",
+      "default": "devopsadmin@inveniolsi.com",
+      "format": "email"
+    },
+    "status": {
+      "type": "string",
+      "default": "scheduled"
+    }
+  },
+  "required": [
+    "ActionType",
+    "ActionId",
+    "EventId",
+    "scheduledTimestamp",
+    "executionTimeStamp",
+    "Payload",
+    "userId",
+    "status"
+  ]
+}
