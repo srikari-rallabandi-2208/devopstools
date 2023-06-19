@@ -49,8 +49,8 @@ class MailTask(object):
 
 
 if __name__ == "__main__":
-    message = """From: Srikari Rallabandi <srikari.rallabandi@inveniolsi.com>
-    To: DevOPS-Dashboard <DevOPS_Dashboard@inveniolsi.com>
+    message = """From: Srikari Rallabandi <admin@company.com>
+    To: DevOPS-Dashboard <devops@company.com>
     Subject: Alert e-mail test
 
     This is a test e-mail message from the refactored code.
