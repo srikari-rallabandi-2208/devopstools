@@ -1,7 +1,7 @@
 {
     "smtp_server": "smtp.office365.com",
     "port": 587,
-    "sender": "noreply-company@inveniolsi.com",
+    "sender": "noreply@company.com",
     "password": "xxxxxxx",
     "recipient": "devops@company.com",
     "payload_file": ""
