@@ -1,5 +1,5 @@
 # devopstools
 DevOps Toolset
 
-![This is an image](Architecture.png)
+![This is an image](docs/Architecture.png)
 
