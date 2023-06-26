@@ -1,13 +1,10 @@
-asgiref @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_63w24gebjz/croots/recipe/asgiref_1661287537348/work
 attrs==23.1.0
 certifi==2023.5.7
 charset-normalizer==3.1.0
-Django @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_cdse89o2w5/croots/recipe/django_1661292537238/work
 idna==3.4
 jsonschema==4.17.3
 pyrsistent==0.19.3
 pyTelegramBotAPI==4.12.0
 requests==2.31.0
-sqlparse @ file:///private/var/folders/nz/j6p8yfhx1mv_0grj5xl4650h0000gp/T/abs_73ubbfcjni/croot/sqlparse_1668793445223/work
 telebot==0.0.5
 urllib3==2.0.3
