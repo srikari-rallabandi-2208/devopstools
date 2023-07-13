@@ -16,9 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from devopstools.views import save_top_results
+from devopstools.views import save_top_results, top_results
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('api/save-top-results/', save_top_results, name='save_top_results'),
+    path('top-results/', top_results, name='top_results'),
 ]

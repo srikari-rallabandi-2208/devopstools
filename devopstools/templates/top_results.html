@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Top Results</title>
+</head>
+<body>
+    <h1>Top Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date</th>
+                <th>CPU Data</th>
+                <th>Memory Data</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in top_results %}
+            <tr>
+                <td>{{ result.created_at }}</td>
+                <td>{{ result.cpu_data }}</td>
+                <td>Mem</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
