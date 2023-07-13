@@ -2,6 +2,15 @@ from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from .models import TopResult
 
+from django.shortcuts import render
+from .models import TopResult
+
+def top_results(request):
+    top_results = TopResult.objects.all().order_by('-created_at')
+    context = {'top_results': top_results}
+    return render(request, 'top_results.html', context)
+
+
 @api_view(['POST'])
 def save_top_results(request):
     cpu_data = request.data.get('cpu_data')
