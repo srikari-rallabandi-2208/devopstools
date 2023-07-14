@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PS Results</title>
+</head>
+<body>
+    <h1>PS Results</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>PID</th>
+                <th>PPID</th>
+                <th>User</th>
+                <th>%CPU</th>
+                <th>%MEM</th>
+                <th>Command</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for result in process_results %}
+            <tr>
+                <td>{{ result.pid }}</td>
+                <td>{{ result.ppid }}</td>
+                <td>{{ result.user }}</td>
+                <td>{{ result.cpu }}</td>
+                <td>{{ result.memory }}</td>
+                <td>{{ result.command }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
