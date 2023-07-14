@@ -4,7 +4,7 @@ import time
 
 def get_top_results():
     try:
-        command = "top  -n 1 -o cpu_me | head -n 17"  # Adjust the command based on your requirements
+        command = "top -b -n 1 -o %CPU | head -n 17"  # Adjust the command based on your requirements
         output = subprocess.check_output(command, shell=True, universal_newlines=True)
         lines = output.strip().split('\n')
         cpu_data = lines[6:13]  # Extract CPU data from the output
