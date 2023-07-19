@@ -16,7 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from devopstools.views import save_top_results, top_results, ps_results, save_ps_results
+from devopstools.views import save_top_results, top_results, ps_results, save_ps_results, save_java_processes, \
+    java_processes
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -24,4 +25,6 @@ urlpatterns = [
     path('top-results/', top_results, name='top_results'),
     path('api/save-ps-results/', save_ps_results, name='save_ps_results'),
     path('ps-results/', ps_results, name='ps_results'),
+    path('api/save-java-processes/', save_java_processes, name='save_java_processes'),
+    path('java-processes/', java_processes, name='java_processes'),
 ]

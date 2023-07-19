@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Java Processes</title>
+</head>
+<body>
+    <h1>Java Processes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>PID</th>
+                <th>Name</th>
+                <th>Username</th>
+                <th>Command Line</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for process in java_processes %}
+            <tr>
+                <td>{{ process.pid }}</td>
+                <td>{{ process.name }}</td>
+                <td>{{ process.username }}</td>
+                <td>{{ process.cmdline }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
